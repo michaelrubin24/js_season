@@ -12,40 +12,46 @@ var result = alert("Здравствуйте, на номер телефона "
 */
 
 var month = prompt("Введите месяц своего рождения: ").toLowerCase();
-
-switch (month) {
-  case "12":
-  case "1":
-  case "2":
-  case "декабрь":
-  case "январь":
-  case "февраль":
-    alert("Вы родились зимой");
-    break;
-  case "3":
-  case "4":
-  case "5":
-  case "март":
-  case "апрель":
-  case "май":
-    alert("Вы родились весной");
-    break;
-  case "6":
-  case "7":
-  case "8":
-  case "июнь":
-  case "июль":
-  case "август":
-    alert("Вы родились летом");
-    break;
-  case "9":
-  case "10":
-  case "11":
-  case "сентябрь":
-  case "октябрь":
-  case "ноябрь":
-    alert("Вы родились осенью");
-    break;
-  default:
-  alert("Неправильный ввод");
+if ((month > 0 && month <= 12) || month == "январь" || month == "февраль" ||
+ month == "март" || month == "апрель" || month == "май" ||
+ month == "июнь" || month == "июль" || month == "август" ||
+ month == "сентябрь" || month == "октябрь" || month == "ноябрь" || month == "декабрь"){
+  switch (month){
+    case "12":
+    case "1":
+    case "2":
+    case "декабрь":
+    case "январь":
+    case "февраль":
+      alert("Вы родились зимой");
+      break;
+    case "3":
+    case "4":
+    case "5":
+    case "март":
+    case "апрель":
+    case "май":
+      alert("Вы родились весной");
+      break;
+    case "6":
+    case "7":
+    case "8":
+    case "июнь":
+    case "июль":
+    case "август":
+      alert("Вы родились летом");
+      break;
+    case "9":
+    case "10":
+    case "11":
+    case "сентябрь":
+    case "октябрь":
+    case "ноябрь":
+      alert("Вы родились осенью");
+      break;
+    default:
+    alert("Неправильный ввод");
+  }
+}else{
+  alert("Неправильно");
 }
